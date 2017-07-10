@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "762584231980",
+    "firebase_url": "https://epicworkout-8c711.firebaseio.com",
+    "project_id": "epicworkout-8c711",
+    "storage_bucket": "epicworkout-8c711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762584231980:android:444fd807095eb4c6",
+        "android_client_info": {
+          "package_name": "com.fernaak.epicworkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762584231980-cm44t48k8et56lbjclvpj35trl1idv8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fernaak.epicworkout",
+            "certificate_hash": "CA1B9032CAE493ABF7993DF9F593864283D682ED"
+          }
+        },
+        {
+          "client_id": "762584231980-u88u2m7u9pch8giu1s35dicr4mun9el7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoq5j-8SM7B9MtfDrAqqZWmtk_D5NHaHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762584231980-u88u2m7u9pch8giu1s35dicr4mun9el7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

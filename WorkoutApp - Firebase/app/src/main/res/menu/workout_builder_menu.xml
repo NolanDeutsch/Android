@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fernaak.workoutapp.exerciseItems.ExerciseActivity">
+
+    <item
+        android:id="@+id/edit_exercise_name"
+        android:title="@string/edit_exercise_name"
+        app:showAsAction="never" />
+</menu>

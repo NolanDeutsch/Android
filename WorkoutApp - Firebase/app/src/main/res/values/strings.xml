@@ -1,0 +1,78 @@
+<resources>
+    <!--
+        == Base Strings For the App ==
+    -->
+    <string name="app_name">Workout</string>
+    <string name="pager_title_Exercises">Exercises</string>
+    <string name="pager_title_Workouts">Workouts</string>
+
+
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Pets</string>
+
+    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
+    <string name="editor_activity_title">Add an Exercise</string>
+    <string name="editor_activity_edit_title">Edit Exercise</string>
+
+    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for name category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_name">Name</string>
+
+    <!-- Label for name category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_description">Description</string>
+
+    <!-- Label for sets information in the editor [CHAR LIMIT=30] -->
+    <string name="category_Body_Area">Body Area</string>
+    <!-- Label for sets information in the editor [CHAR LIMIT=30] -->
+    <string name="category_sets">Sets</string>
+
+    <!-- Label for reps information in the editor [CHAR LIMIT=30] -->
+    <string name="category_reps">Reps</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_exercise_name">Name</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_exercise_description">Description</string>
+
+    <!-- Label for dropdown menu option for body area -->
+    <string name="spinner_unknown">Unknown</string>
+    <string name="area_arms">Arms</string>
+    <string name="area_abs">Abs</string>
+    <string name="area_chest">Chest</string>
+    <string name="area_back">Back</string>
+    <string name="area_legs">Legs</string>
+    <string name="area_shoulders">Shoulders</string>
+
+    <!--Labels shown when list view is empty-->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+    <string name="empty_view_subtitle_text">Get started by adding an exercise</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">DISCARD</string>
+    <string name="keep_editing">KEEP EDITING</string>
+
+
+    <!-- Dialog message to ask the user to confirm deleting the current pet [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this exercise?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="unknown_exercise">Unknown Exercise</string>
+    <!-- Card overflow menus -->
+    <string name="add_to_favourites">Add to Favourites</string>
+    <string name="add_to_workout">Add to Workout</string>
+    <string name="start_workout">Start Workout</string>
+
+    <!--WorkoutBuilder-->
+    <string name="add_exercise_button">Add to Workout</string>
+    <string name="edit_exercise_name">Edit Name</string>
+</resources>
