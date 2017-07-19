@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\c0def30359ecbeb23f0c31a8593eb2c195191568\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_449f3382b60d275a6b16783fe4f807f029747172\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\net.simonvt.schematic\schematic-annotations\0.6.3\4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36\schematic-annotations-0.6.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\schematic-annotations-0.6.3_1624f121dcbcfcfd5e3b21ba167a594a971c3c5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\d47a705ac12bc63beec8b50ef7c3da4cd008b8ae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3492cd1bdf1ef45d4921eed7ff1be0b9b7455182\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\8d143376c9333f57fd183574e9c2680377483501\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2384e20a9b7e0958d1c556621c5af964f5e2e200\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\793327f74187ee95a2a36f50cac85d7b454a9129\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="378c0fefdd7adedd0ea74d7607b3d4a251b29d78">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f82690f7f7eafa7c5e77f5bfdde773b40e27022\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\05d892d395a65ec5e68057b05ba53eb39ec155a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_98aa62b8cfe672b8a14139320191709b8a892e51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\ProGitHub\Android\AdvancedAndroid_Squawker\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b72ac6c0d88e8c74b2ab29ac8420258c8dd38b70\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\d917a3e95ef7b2685102be038d80a3a3e9ed5a1a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_cb1b05d64499d02479b81b5e85e1015c3f0e7841.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\ebd330503aef7f9c9e4f20ee4873291a42a0eae0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7b985b76b770846fed4eca85a9d7bbdf6cad518\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\28357e750255cc74dc989736c8c30c6cd987f45f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a70d4dcbf3f71c96df3ff41a39b009557cf1e4a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\3f0b0ff68f5c0778a99fecab90cf45a58a82bc80\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_33de271b2b6c186b251bbb71c2143eeb9eccb7ca.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\46fdea23aa9b020f324eb731330d460bea82c56d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_26719245b449e3966e847ab454818eed105c7d3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\f3a87f8897b634385118c854bfd6e6aab75704c8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4969ceae2c3a53b1086a9f0e2ddbfdb3e5edc9f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\da1eef5e2984e5bbeab3402b902d8443e7ce8140\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2c1d9fbe7d2f686b3dcdbc3f63a983a211401ca3">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_880a5d21456c32acc1c1cb174129745a5a6833d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\dd3948aa0920051f839a13e0c068a331b7ff3e0d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9a6350134db98fb39e212ddca5f0bad9280e8f3f">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_66c1c4a5169221193640553b8cadd1a653a31a75.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_22c6198bc7821a9377d05e6c310a6b2419e6e3e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ccc312b17be4cc78b3bd5df47bde025a078b7f71">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_97aa179a6ecc771ff04c49328b8474ecf97d26f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\a1fa6a89e01ef7c2b3f8fcbd2f3c367e483c1eaa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_74eb3ea61af69554ad8cc656f4f695dc64545265\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\ab0ef1c079012c6cb31cc857a2ee452c4f86a1f3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc5624185d414a0f572bfb3df7d841ceb335aef9">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_3c178fec7f79843c09dd32578fcc5c8accff6f32.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\98892dc54bd9e2dd4cd2005fe4fed915e683ec21\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ef3bc1b73f93224fef0be23cfc60d5905df4f04a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\e0af350b43eb0a4385a94a57cbe57e7687fb2d16\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d9184a8abab83a75df6ca5f44e0382e8761a8da\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\68097f414180c7dc3230bf3a65bf5e8b221a6edb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2737331564e0084fc0eb30ba500564a6dbe5e98f">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_10fd7bbb01e6e8d224f865251056507f7db06fd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fernaak\.android\build-cache\2b6777c2b0e29af9a523b988dd6c90c1809ec988\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f260cdc1a267b17b911022919f19d568e6624229">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\pre-dexed\debug\classes_d2db4060d49ce87b9ddb0f206bc26150ff30c1c2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\ProGitHub\Android\AdvancedAndroid_Squawker\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="acbcec3fe879e988f99ddade88d86e413d4c2aa3">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_da288933cf8d0f83e12a2ce260d3bc2e4be61f7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\5a1d3092b414bec2f16deac5c4f200d0e05fd804\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_789b8f3cc0ce65999f196a0a39103d7f653b5605\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_2b387eb3c927052e785b43e08d1db9b63144b991\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\25fefee74087b9f97009c904d95ec993a1f92943\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5215570f9326b37614be04cd10d1aad6ad45fcd5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\97adcf6643c49835d58ff7591948f2b930f044c2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29b7362fc0ecce6280114ac0f4c7aa9fcae29bb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\9e868fde021b8d915e4af01dc8e572bee8b9f9d2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6f5730f19d22f177096c8d134d4892b0fbd631d">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_df8aa383d3f31bb41c63c3fe642bd33d723072ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\61e3de9a51bec47e7f7d9e6426bf13177a0c7bc2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fadbddf08f5d6d549c7b23b76ef3f4d50901a410\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\7d59dda840105d88f885443efda33da555131836\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a23e88627e70b4c5710b241cf34ecb2452203cf4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.android\build-cache\b5f67a6df361fa2261240a5d1e2c16051f7f7a14\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\Fernaak\Documents\ProGitHub\Android_Udacity\AdvancedAndroid_Squawker\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5cf55ebeb53f8c69a299b9cdf97a05fb6bd55fcb\classes.dex" />
+    </item>
+
+</items>
