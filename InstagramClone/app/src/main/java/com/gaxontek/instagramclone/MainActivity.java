@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.gaxontek.instagramclone.login.LoginActivity;
+import com.gaxontek.instagramclone.model.PostModel;
 import com.gaxontek.instagramclone.model.StoryCircleModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -87,15 +88,16 @@ public class MainActivity extends AppCompatActivity {
         mapStories.put("image", storyCircleModel.mImage);
         mapStories.put("name", storyCircleModel.mName);
 
-        map.put("id", dataRefFeed.getKey());
-        map.put("postUsername", "Nolan");
-        map.put("postUserImage", "Pic.jpeg");
-        map.put("postImage", "BigPic.jpeg");
-        map.put("postLikes", 0);
-        map.put("postDescription", "stuff");
-        map.put("postTime", Calendar.getInstance().getTime());
-        map.put("userImage", "pic.jpg");
+        PostModel post = new PostModel();
+        post.id = dataRefFeed.getKey();
+        post.postUsername = "Nolan";
+        post.postUserImage = "Pic.png";
+        post.postImage = "PostPic.jpeg";
+        post.postLikes = 0;
+        post.userLiked = null;
+        post.postDescription = "This is the description of the post";
+        post.postTime = Calendar.getInstance().getTime().toString();
 
-        dataRefFeed.setValue(map);
+        dataRefFeed.setValue(post);
     }
 }

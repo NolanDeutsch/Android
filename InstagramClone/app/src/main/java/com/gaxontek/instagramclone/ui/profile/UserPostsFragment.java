@@ -21,6 +21,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+
 public class UserPostsFragment extends Fragment {
 
     private final String NEWS_FEED_DATABASE_LOCATION = "posts";
@@ -70,10 +74,10 @@ public class UserPostsFragment extends Fragment {
                                         snapshot.child("postUsername").getValue().toString(),
                                         snapshot.child("postUserImage").getValue().toString(),
                                         snapshot.child("postImage").getValue().toString(),
-                                        snapshot.child("postLikes").getValue().toString(),
+                                        Integer.parseInt(snapshot.child("postLikes").getValue().toString()),
+                                        (ArrayList<String>) snapshot.child("userLiked").getValue(),
                                         snapshot.child("postDescription").getValue().toString(),
-                                        snapshot.child("postTime").getValue().toString(),
-                                        snapshot.child("userImage").getValue().toString());
+                                        snapshot.child("postTime").getValue().toString());
                             }
                         })
                         .build();

@@ -1,5 +1,6 @@
 package com.gaxontek.instagramclone.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -19,6 +20,8 @@ import com.firebase.ui.database.SnapshotParser;
 import com.gaxontek.instagramclone.R;
 import com.gaxontek.instagramclone.model.PostModel;
 import com.gaxontek.instagramclone.model.StoryCircleModel;
+import com.gaxontek.instagramclone.ui.comments.CommentActivity;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +31,12 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 
-public class HomeFragment extends Fragment{
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Objects;
+
+public class HomeFragment extends Fragment {
 
     private RecyclerView recyclerViewFeed, recyclerViewStories;
     private LinearLayoutManager linearLayoutManagerFeed, linearLayoutManagerStories;
@@ -97,7 +105,7 @@ public class HomeFragment extends Fragment{
                         })
                         .build();
 
-        adapterStories = new FirebaseRecyclerAdapter<StoryCircleModel, StoryCircleViewHolder>(options){
+        adapterStories = new FirebaseRecyclerAdapter<StoryCircleModel, StoryCircleViewHolder>(options) {
 
             @NonNull
             @Override
@@ -123,6 +131,7 @@ public class HomeFragment extends Fragment{
         };
         recyclerViewStories.setAdapter(adapterStories);
     }
+
     //--------------------------------------------------------------------------------------------//
     //Fetch the data to populate the newsfeed                                                     //
     //--------------------------------------------------------------------------------------------//
@@ -140,10 +149,10 @@ public class HomeFragment extends Fragment{
                                         snapshot.child("postUsername").getValue().toString(),
                                         snapshot.child("postUserImage").getValue().toString(),
                                         snapshot.child("postImage").getValue().toString(),
-                                        snapshot.child("postLikes").getValue().toString(),
+                                        Integer.parseInt(snapshot.child("postLikes").getValue().toString()),
+                                        (ArrayList<String>) snapshot.child("userLiked").getValue(),
                                         snapshot.child("postDescription").getValue().toString(),
-                                        snapshot.child("postTime").getValue().toString(),
-                                        snapshot.child("userImage").getValue().toString());
+                                        snapshot.child("postTime").getValue().toString());
                             }
                         })
                         .build();
@@ -159,9 +168,11 @@ public class HomeFragment extends Fragment{
 
             @Override
             protected void onBindViewHolder(PostViewHolder holder, final int position, final PostModel model) {
-                holder.setTxtName(model.getmPostUsername());
-                holder.setLikeNumber(model.getmPostLikes());
+                holder.setTxtName(model.getPostUsername());
+                holder.setLikeNumber(model.getPostLikes());
+                holder.setTxtPostDescription(model.getPostDescription());
 
+                //Heart Button Event
                 holder.btnHeart.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -169,29 +180,38 @@ public class HomeFragment extends Fragment{
                         //Toast.makeText(getActivity(), String.valueOf(position), Toast.LENGTH_SHORT).show();
                     }
                 });
+
+                holder.btnComment.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Comment(getRef(position).getKey());
+                    }
+                });
+
                 isDoubleClicked = false;
                 final Handler handler = new Handler();
-                final Runnable r = new Runnable(){
+                final Runnable r = new Runnable() {
                     @Override
-                    public void run(){
+                    public void run() {
                         //Actions when Single Clicked
-                        isDoubleClicked=false;
+                        isDoubleClicked = false;
                     }
                 };
 
+                //If the image is double clicked event
                 holder.root.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         //Double click event for liking picture
-                        if(isDoubleClicked){
+                        if (isDoubleClicked) {
                             //Actions when double Clicked
                             LikedPost(getRef(position).getKey());
-                            isDoubleClicked=false;
+                            isDoubleClicked = false;
                             //remove callbacks for Handlers
                             handler.removeCallbacks(r);
-                        }else{
-                            isDoubleClicked=true;
-                            handler.postDelayed(r,500);
+                        } else {
+                            isDoubleClicked = true;
+                            handler.postDelayed(r, 500);
                         }
                     }
                 });
@@ -199,17 +219,52 @@ public class HomeFragment extends Fragment{
         };
         recyclerViewFeed.setAdapter(adapterFeed);
     }
+
     //--------------------------------------------------------------------------------------------//
     //Method Calls                                                                                //
     //--------------------------------------------------------------------------------------------//
     public void LikedPost(final String postID) {
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child(NEWS_FEED_DATABASE_LOCATION).child(postID);
+
+        databaseReference.runTransaction(new Transaction.Handler() {
+            @Override
+            public Transaction.Result doTransaction(MutableData mutableData) {
+                PostModel post = mutableData.getValue(PostModel.class);
+                if (post == null) {
+                    return Transaction.success(mutableData);
+                }
+
+                if (post.userLiked.contains(getUid())) {
+                    // Unlike the post and remove self from list
+                    post.postLikes = post.postLikes - 1;
+                    post.userLiked.remove(getUid());
+                } else {
+                    // Like the post and add self to likes list
+                    post.postLikes = post.postLikes + 1;
+                    post.userLiked.add(getUid());
+                }
+
+                // Set value and report transaction success
+                mutableData.setValue(post);
+                return Transaction.success(mutableData);
+            }
+
+            @Override
+            public void onComplete(DatabaseError databaseError, boolean committed,
+                                   DataSnapshot currentData) {
+                // Transaction completed
+            }
+        });
+    }
+
+    public void stuff(final String postID) {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child(NEWS_FEED_DATABASE_LOCATION);
         Query query = FirebaseDatabase.getInstance().getReference().child(NEWS_FEED_DATABASE_LOCATION);
 
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for (final DataSnapshot cameraSnapshot: dataSnapshot.getChildren()) {
+                for (final DataSnapshot cameraSnapshot : dataSnapshot.getChildren()) {
 
                     final DatabaseReference favRef = cameraSnapshot.getRef().child("postLikes");
 
@@ -218,13 +273,12 @@ public class HomeFragment extends Fragment{
                         public Transaction.Result doTransaction(MutableData mutableData) {
                             Integer currentValue = mutableData.getValue(Integer.class);
 
-                            if(cameraSnapshot.getKey() == postID) {
+                            if (Objects.equals(cameraSnapshot.getKey(), postID)) {
                                 if (currentValue == null) {
                                     mutableData.setValue(1);
                                 } else {
                                     mutableData.setValue(currentValue + 1);
                                 }
-
                                 return Transaction.success(mutableData);
                             }
                             return Transaction.abort();
@@ -236,7 +290,6 @@ public class HomeFragment extends Fragment{
                             // Transaction completed
                         }
                     });
-
                 }
             }
 
@@ -245,6 +298,15 @@ public class HomeFragment extends Fragment{
                 throw databaseError.toException();
             }
         });
+    }
 
+    public void Comment(final String postID) {
+        Intent intent = new Intent(this.getContext(), CommentActivity.class);
+        intent.putExtra("Post Id", postID);
+        startActivity(intent);
+    }
+
+    public String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 }

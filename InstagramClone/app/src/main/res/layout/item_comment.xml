@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_comment_root"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,24 +20,79 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:src="@drawable/profile"
-            android:layout_alignParentStart="true"
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000" />
 
-        <TextView
-            android:id="@+id/tvComment"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"
-            android:layout_weight="1"
-            android:text="Lorem ipsum dolor sit amet" />
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Lorem ipsum dolor sit amet" />
+                <ImageButton
+                    android:id="@+id/btn_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/heart_outline_black" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="0 min"/>
+                <TextView
+                    android:id="@+id/tv_comment_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_comment_time" />
+                <TextView
+                    android:id="@+id/tv_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:layout_toRightOf="@+id/tv_comment_likes"
+                    android:text="Reply"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#cccccc"
+                    android:layout_marginEnd="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Replies"/>
+
+            </LinearLayout>
+    </LinearLayout>
     </LinearLayout>
 
-    <View
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comment_reply"
+        android:layout_marginStart="50dp"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="88dp"
-        android:background="#cccccc" />
-</FrameLayout>
+        android:layout_height="wrap_content"/>
+</LinearLayout>

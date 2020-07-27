@@ -1,78 +1,69 @@
 package com.gaxontek.instagramclone.model;
 
+import java.util.ArrayList;
+
 public class PostModel {
-        public String mId, mPostUsername, mPostUserImage, mPostImage, mPostLikes, mPostDescription, mPostTime, mUserImage;
+    public String id, postUsername, postUserImage, postImage, postDescription, postTime;
+    public int postLikes;
+    public ArrayList<String> userLiked = new ArrayList<String>();
 
-        public PostModel() {
-        }
+        public PostModel() { }
 
-        public PostModel(String mId, String mPostUsername, String mPostUserImage, String mPostImage,
-                         String mPostLikes, String mPostDescription, String mPostTime, String mUserImage) {
-            this.mId = mId;
-            this.mPostUsername = mPostUsername;
-            this.mPostUserImage = mPostUserImage;
-            this.mPostImage = mPostImage;
-            this.mPostLikes = mPostLikes;
-            this.mPostDescription = mPostDescription;
-            this.mPostTime = mPostTime;
-            this.mUserImage = mUserImage;
-        }
-
-        public String getmId() {
-            return mId;
+        public PostModel(String id, String postUsername, String postUserImage, String postImage,
+                         int postLikes, ArrayList<String> userLiked, String postDescription, String postTime) {
+            this.id = id;
+            this.postUsername = postUsername;
+            this.postUserImage = postUserImage;
+            this.postImage = postImage;
+            this.postLikes = postLikes;
+            this.userLiked = userLiked;
+            this.postDescription = postDescription;
+            this.postTime = postTime;
         }
 
-        public void setmId(String mId) {
-            this.mId = mId;
+        public String getId() {
+            return id;
+        }
+        public void setId(String id) {
+            this.id = id;
         }
 
-        public String getmPostUsername() {
-            return mPostUsername;
+        public String getPostUsername() {
+            return postUsername;
+        }
+        public void setPostUsername(String postUsername) {
+            this.postUsername = postUsername;
         }
 
-        public void setmPostUsername(String mPostUsername) {
-            this.mPostUsername = mPostUsername;
+        public String getPostUserImage() {
+            return postUserImage;
         }
-        public String getmPostUserImage() {
-            return mPostUserImage;
+        public void setPostUserImage(String postUserImage) { this.postUserImage = postUserImage; }
+
+        public String getPostImage() {
+            return postImage;
+        }
+        public void setPostImage(String postImage) {
+            this.postImage = postImage;
         }
 
-        public void setmPostUserImage(String mPostUserImage) {
-            this.mPostUserImage = mPostUserImage;
-        }
-        public String getmPostImage() {
-            return mPostImage;
+        public int getPostLikes() { return postLikes; }
+        public void setPostLikes(int postLikes) {
+            this.postLikes = postLikes;
         }
 
-        public void setmPostImage(String mPostImage) {
-            this.mPostImage = mPostImage;
-        }
-        public String getmPostLikes() {
-            return mPostLikes;
-        }
+        public ArrayList<String> getUserLiked() { return  userLiked; }
+        public void setUserLiked(ArrayList<String> userLiked) { this.userLiked = userLiked; }
 
-        public void setmPostLikes(String mPostLikes) {
-            this.mPostLikes = mPostLikes;
+        public String getPostDescription() {
+            return postDescription;
         }
-        public String getmPostDescription() {
-            return mPostDescription;
-        }
+        public void setPostDescription(String postDescription) { this.postDescription = postDescription; }
 
-        public void setmPostDescription(String mPostDescription) {
-            this.mPostDescription = mPostDescription;
+        public String getPostTime() {
+            return postTime;
         }
-        public String getmPostTime() {
-            return mPostTime;
-        }
-
-        public void setmPostTime(String mPostTime) {
-            this.mPostTime = mPostTime;
-        }
-        public String getmUserImage() {
-            return mUserImage;
-        }
-
-        public void setmUserImage(String mUserImage) {
-            this.mUserImage = mUserImage;
+        public void setPostTime(String postTime) {
+            this.postTime = postTime;
         }
 }
