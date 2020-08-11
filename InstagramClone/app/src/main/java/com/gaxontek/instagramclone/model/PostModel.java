@@ -7,7 +7,7 @@ public class PostModel {
     public int postLikes;
     public ArrayList<String> userLiked = new ArrayList<String>();
 
-        public PostModel() { }
+    public PostModel() { }
 
         public PostModel(String id, String postUsername, String postUserImage, String postImage,
                          int postLikes, ArrayList<String> userLiked, String postDescription, String postTime) {

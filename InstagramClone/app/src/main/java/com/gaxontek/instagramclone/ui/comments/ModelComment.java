@@ -1,57 +1,58 @@
 package com.gaxontek.instagramclone.ui.comments;
 
 public class ModelComment {
-    public String mId, mName, mImage, mComment, mPostTime, mLikes;
+    public String id, image, name, comment, commentTime;
+    int likes;
 
     public ModelComment() {
 
     }
 
-    public ModelComment(String mId, String mImage, String mName, String mComment, String mPostTime, String mLikes) {
-        this.mId = mId;
-        this.mImage = mImage;
-        this.mName = mName;
-        this.mComment = mComment;
-        this.mPostTime = mPostTime;
-        this.mLikes = mLikes;
+    public ModelComment(String id, String image, String name, String comment, String commentTime, int likes) {
+        this.id = id;
+        this.image = image;
+        this.name = name;
+        this.comment = comment;
+        this.commentTime = commentTime;
+        this.likes = likes;
 
     }
 
-    public String getmId() {
-        return mId;
+    public String getId() {
+        return id;
     }
-    public void setmId(String mId) {
-        this.mId = mId;
-    }
-
-    public String getmImage() {
-        return mImage;
-    }
-    public void setmImage(String mImage) { this.mImage = mImage; }
-
-    public String getmName() {
-        return mName;
-    }
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getmComment() {
-        return mComment;
+    public String getImage() {
+        return image;
     }
-    public void setmComment(String mComment) {
-        this.mComment = mComment;
+    public void setImage(String image) { this.image = image; }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getmPostTime() { return mPostTime; }
-    public void setmPostTime(String mPostTime) {
-        this.mPostTime = mPostTime;
+    public String getComment() {
+        return comment;
+    }
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
-    public String getmLikes() {
-        return mLikes;
+    public String getCommentTime() { return commentTime; }
+    public void setCommentTime(String postTime) {
+        this.commentTime = postTime;
     }
-    public void setmLikes(String mLikes) {
-        this.mLikes = mLikes;
+
+    public int getLikes() {
+        return likes;
+    }
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 }

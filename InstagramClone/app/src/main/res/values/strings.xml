@@ -39,4 +39,7 @@
     <string name="followers">Followers</string>
     <string name="default_num">0</string>
     <string name="edit_button_text">Edit Profile</string>
+    <string name="gallery">Gallery</string>
+    <string name="add_photo">Photo</string>
+    <string name="add_video">Video</string>
 </resources>

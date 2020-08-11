@@ -90,12 +90,13 @@
             android:elevation="1dp">
 
             <EditText
+                android:id="@+id/edit_text_comment"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/btnSendComment"
+                android:id="@+id/btnAddComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Send" />

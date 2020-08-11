@@ -1,4 +1,4 @@
-package com.gaxontek.instagramclone.ui.profile;
+package com.gaxontek.instagramclone.ui.add;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,33 +16,34 @@ import com.firebase.ui.database.SnapshotParser;
 import com.gaxontek.instagramclone.R;
 import com.gaxontek.instagramclone.model.PostModel;
 import com.gaxontek.instagramclone.ui.home.PostViewHolder;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
 
-public class UserTaggedFragment extends Fragment {
+public class GalleryFragment extends Fragment {
+
     private final String NEWS_FEED_DATABASE_LOCATION = "posts";
 
-    private RecyclerView recyclerViewUserTaggedPosts;
-    private GridLayoutManager gridLayoutUserTaggedPosts;
-    private FirebaseRecyclerAdapter adapterUserTaggedPosts;
+    private RecyclerView recyclerViewUserPosts;
+    private GridLayoutManager gridLayoutUserPosts;
+    private FirebaseRecyclerAdapter adapterUserPosts;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_user_tagged, container, false);
+        View view =  inflater.inflate(R.layout.fragment_gallery, container, false);
 
-        recyclerViewUserTaggedPosts = view.findViewById(R.id.recycler_user_tagged_posts);
+
+        recyclerViewUserPosts = view.findViewById(R.id.recycler_view_gallery);
 
         //User Post Items
-        gridLayoutUserTaggedPosts = new GridLayoutManager(getActivity(), 3);
-        recyclerViewUserTaggedPosts.setLayoutManager(gridLayoutUserTaggedPosts);
-        recyclerViewUserTaggedPosts.setAdapter(adapterUserTaggedPosts);
-        recyclerViewUserTaggedPosts.setHasFixedSize(true);
+        gridLayoutUserPosts = new GridLayoutManager(getActivity(), 5);
+        recyclerViewUserPosts.setLayoutManager(gridLayoutUserPosts);
+        recyclerViewUserPosts.setAdapter(adapterUserPosts);
+        recyclerViewUserPosts.setHasFixedSize(true);
         fetchPosts();
 
         return view;
@@ -50,13 +51,13 @@ public class UserTaggedFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        adapterUserTaggedPosts.startListening();
+        adapterUserPosts.startListening();
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        adapterUserTaggedPosts.stopListening();
+        adapterUserPosts.stopListening();
     }
 
     private void fetchPosts() {
@@ -81,7 +82,7 @@ public class UserTaggedFragment extends Fragment {
                         })
                         .build();
 
-        adapterUserTaggedPosts = new FirebaseRecyclerAdapter<PostModel, PostViewHolder>(options) {
+        adapterUserPosts = new FirebaseRecyclerAdapter<PostModel, PostViewHolder>(options) {
             @Override
             public PostViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext())
@@ -95,6 +96,7 @@ public class UserTaggedFragment extends Fragment {
 
             }
         };
-        recyclerViewUserTaggedPosts.setAdapter(adapterUserTaggedPosts);
+        recyclerViewUserPosts.setAdapter(adapterUserPosts);
     }
 }
+
